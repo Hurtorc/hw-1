@@ -1,3 +1,5 @@
+/* Universal Selector */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,11 +9,16 @@
 
 }
 
+
+/* Element Selectors */
+
 body {
     background-color: #d9dcd6;
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -48,6 +55,22 @@ p {
     font-size: 16px;
 }
 
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+footer h2 {
+    font-size: 20px;
+    color: black;
+}
+
+
+/* Class Selector */
+
 .hero {
     height: 800px;
     width: 100%;
@@ -68,6 +91,8 @@ p {
 }
 
 .content {
+    display: flex;
+    flex-wrap: wrap;
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -186,20 +211,34 @@ p {
     font-size: 36px;
 }
 
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    color: black;
-}
 
-footer h2 {
-    font-size: 20px;
-    color: black;
-}
+/* ID Selectors */
 
 #copyright {
     color: black;
+
+}
+
+/* Media Selectors */
+@media screen and (max-width: 992px) {
+    .benefits {
+        display: block;
+        width: 96%;
+        max-height: 50%;
+        float: center;
+        clear: none;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+
+    .content {
+        display: inline;
+        flex-wrap: wrap;
+        width: fit-content;
+        margin-right: 20px;
+
+    }
+
+
 
 }
