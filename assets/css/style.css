@@ -17,8 +17,6 @@ body {
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -220,6 +218,15 @@ footer h2 {
 }
 
 /* Media Selectors */
+
+@media screen and (max-width: 1040px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
 @media screen and (max-width: 992px) {
     .benefits {
         display: block;
@@ -238,7 +245,5 @@ footer h2 {
         margin-right: 20px;
 
     }
-
-
 
 }
